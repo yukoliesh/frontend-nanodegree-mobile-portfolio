@@ -2,6 +2,11 @@
 * Submission URL: https://yukoliesh.github.io/udacityFrontEndPortfolio/
 * Mobile PSI score: 94
 * Desktop PSI score: 95
+* Time to generate pizzas on load: 11.199999999999989ms
+* Average scripting time to generate last 10 frames: 9.457999999999668ms
+* Average scripting time to generate last 10 frames: 5.232499999999891ms
+* Average scripting time to generate last 10 frames: 5.854999999999928ms
+* Time to resize pizzas: 1.3850000000002183ms
 
 ## Website Performance Optimization portfolio project
 

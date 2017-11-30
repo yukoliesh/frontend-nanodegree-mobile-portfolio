@@ -400,6 +400,8 @@ var pizzaElementGenerator = function(i) {
   return pizzaContainer;
 };
 
+var resizePizzaCSSRuleIndex;
+
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
 var resizePizzas = function(size) {
   window.performance.mark("mark_start_resize");   // User Timing API function

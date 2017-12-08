@@ -22,6 +22,8 @@
 * The background of Pizza is reduced
 * Added pizzas when the page loads
 * The number of pizzas are reduced based on the browser window resolution
+* Increased the site performance by adding the transform: translateZ(0); and
+backface-visibility: hidden
 
 ## Website Performance Optimization portfolio project
 

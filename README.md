@@ -8,6 +8,21 @@
 * Average scripting time to generate last 10 frames: 5.854999999999928ms
 * Time to resize pizzas: 1.3850000000002183ms
 
+## What I Have done
+
+### The original Page Score on pizza.html was
+* Mobile - 78
+* Desktop - 89
+
+### The list of Optimization
+* Reduced the images' size to minimum
+* Minifed the CSS and JS files
+* Changing the .querySelector() to .getElementById()
+* Changing the .querySelectorAll() to .getElementsByClassName()
+* The background of Pizza is reduced
+* Added pizzas when the page loads
+* The number of pizzas are reduced based on the browser window resolution
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -39,6 +54,8 @@ Some useful tips to help you get started:
 1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
 
 Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
+
+
 
 #### Part 2: Optimize Frames per Second in pizza.html
 

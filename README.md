@@ -11,12 +11,12 @@
 ## What I Have done
 
 ### The original Page Score on pizza.html was
-* Mobile - 78
-* Desktop - 89
+* Mobile - 36
+* Desktop - 36
 
 ### The list of Optimization
 * Reduced the images' size to minimum
-* Minifed the CSS and JS files
+* Replaced the CSS in inline
 * Changing the .querySelector() to .getElementById()
 * Changing the .querySelectorAll() to .getElementsByClassName()
 * The background of Pizza is reduced
@@ -24,6 +24,7 @@
 * The number of pizzas are reduced based on the browser window resolution
 * Increased the site performance by adding the transform: translateZ(0); and
 backface-visibility: hidden
+
 
 ## Website Performance Optimization portfolio project
 

@@ -401,7 +401,7 @@ var pizzaElementGenerator = function(i) {
 
 
 
-    pizzaImage.src = "images/pizza.png";
+    pizzaImage.src = "images/pizza.jgp";
     pizzaImage.classList.add("img-responsive");
     pizzaImageContainer.appendChild(pizzaImage);
     pizzaContainer.appendChild(pizzaImageContainer);

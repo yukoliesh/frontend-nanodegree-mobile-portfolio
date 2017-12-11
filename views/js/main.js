@@ -431,13 +431,13 @@ var resizePizzas = function(size) {
     function changeSliderLabel(size) {
         switch (size) {
             case "1":
-                document.getElementById("#pizzaSize").innerHTML = "Small";
+                document.querySelector("#pizzaSize").innerHTML = "Small";
                 return;
             case "2":
-                document.getElementById("#pizzaSize").innerHTML = "Medium";
+                document.querySelector("#pizzaSize").innerHTML = "Medium";
                 return;
             case "3":
-                document.getElementById("#pizzaSize").innerHTML = "Large";
+                document.querySelector("#pizzaSize").innerHTML = "Large";
                 return;
             default:
                 console.log("bug in changeSliderLabel");
@@ -449,7 +449,7 @@ var resizePizzas = function(size) {
     // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
     function determineDx(elem, size) {
         var oldWidth = elem.offsetWidth;
-        var windowWidth = document.getElementById("#randomPizzas").offsetWidth;
+        var windowWidth = document.querySelector("#randomPizzas").offsetWidth;
         var oldSize = oldWidth / windowWidth;
 
         // Changes the slider value to a percent width
@@ -474,7 +474,7 @@ var resizePizzas = function(size) {
 
     // Iterates through pizza elements on the page and changes their widths
     function changePizzaSizes(size) {
-        var nodeList = document.getElementsByClassName(".randomPizzaContainer");
+        var nodeList = document.querySelectorAll(".randomPizzaContainer");
         var dx = determineDx(nodeList[0], size);
         var newwidth = (nodeList[0].offsetWidth + dx) + 'px';
         var styleCSS = document.styleSheets[0];
@@ -532,7 +532,7 @@ function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
 
-    var items = document.getElementsByClassName('.mover');
+    var items = document.querySelectorAll('.mover');
     for (var i = 0; i < items.length; i++) {
         // document.body.scrollTop is no longer supported in Chrome.
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;

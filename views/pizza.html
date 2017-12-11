@@ -2,8 +2,9 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <style>
+    <!-- <style>
     * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -54,7 +55,7 @@
     .container {
         background-color: rgba(240, 60, 60, 0.8);
     }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -90,9 +91,9 @@
             <div class="col-md-4">
                 <picture>
                     <source srcset="images/pizzeria-compressed-720.jpg" media="(max-width: 992px)">
-                    <source srcset="images/pizzeria-compressed-290.jpg">
-                    <img src="images/pizzeria-compressed-720.jpg" class="img-responsive">
-                    <!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
+                        <source srcset="images/pizzeria-compressed-290.jpg">
+                            <img src="images/pizzeria-compressed-720.jpg" class="img-responsive">
+                            <!-- Image credit to: http://commons.wikimedia.org/wiki/File:HK_TST_night_%E5%98%89%E8%98%AD%E9%81%93_Granville_Road_restaurant_Paisano's_Pizzeria_pizza_Dec-2013.JPG -->
                 </picture>
             </div>
             <div class="col-md-8">
@@ -163,10 +164,10 @@
                 </div>
                 <div id="randomPizzas" class="row">
                     <div id="pizza0" class="randomPizzaContainer" style="width:33.33%; height: 370px;">
-                        <div style="width:35%">
+                        <div class="col-md-6">
                             <img src="images/pizza.png" class="img-responsive">
                         </div>
-                        <div style="width:65%">
+                        <div class="col-md-6">
                             <h4>The Udacity Special</h4>
                             <ul>
                                 <li>Turkey</li>
@@ -197,24 +198,7 @@
         </div>
         <div id="footer" class="col-md-12">Thanks for visiting! &copy; 2017 Udacity</div>
     </div>
-    <script type="text/javascript">
-    importScripts();
-
-    function importScripts() {
-        getContent("js/main.js", function(code) {
-            var s = document.createElement('script');
-            s.type = 'text/javascript';
-            //s.async = true;
-            s.innerHTML = code;
-            var x = document.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x);
-            setTimeout(insertNext1, 1);
-        });
-
-        function insertNext() {
-            setTimeout(pageReadyMan, 10);
-        }
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

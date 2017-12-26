@@ -1,12 +1,7 @@
 # Yuko's submission
 * Submission URL: https://yukoliesh.github.io/udacityFrontEndPortfolio/
-* Mobile PSI score: 94
+* Mobile PSI score: 93
 * Desktop PSI score: 95
-* Time to generate pizzas on load: 11.199999999999989ms
-* Average scripting time to generate last 10 frames: 9.457999999999668ms
-* Average scripting time to generate last 10 frames: 5.232499999999891ms
-* Average scripting time to generate last 10 frames: 5.854999999999928ms
-* Time to resize pizzas: 1.3850000000002183ms
 
 ## What I Have done
 
@@ -17,6 +12,7 @@
 ### The list of Optimization
 * Reduced the images' size to minimum
 * Replaced the CSS in inline
+* Minified the bootstrap file
 * Changing the .querySelector() to .getElementById()
 * Changing the .querySelectorAll() to .getElementsByClassName()
 * The background of Pizza is reduced
@@ -24,6 +20,20 @@
 * The number of pizzas are reduced based on the browser window resolution
 * Increased the site performance by adding the transform: translateZ(0); and
 backface-visibility: hidden
+
+
+### The Result after the change
+* Time to generate pizzas on load: 10.849999999999682ms
+* Average scripting time to generate last 10 frames: 0.015500000000611181ms
+* Average scripting time to generate last 10 frames: 0.020999999993364327ms
+* Average scripting time to generate last 10 frames: 0.014500000000771252ms
+* Time to resize pizzas: 1.3349999999991269ms
+* Average scripting time to generate last 10 frames: 0.013999999989755452ms
+
+## How I ran this test
+* I ran the local server and created a public URL by ngrok
+* I ran the PageSpeed Tools test page
+* Check through the Console and Performance in Chrome DevTool.
 
 
 ## Website Performance Optimization portfolio project

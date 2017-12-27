@@ -397,16 +397,11 @@ var pizzaElementGenerator = function(i) {
     pizzaContainer.style.display = "inline-block";
     pizzaContainer.id = "pizza" + i; // gives each pizza element a unique id
     pizzaImageContainer.style.width="35%";
-    //pizzaImageContainer.classList.add("col-md-6");
-
-
 
     pizzaImage.src = "images/pizza-min.png";
     pizzaImage.classList.add("img-responsive");
     pizzaImageContainer.appendChild(pizzaImage);
     pizzaContainer.appendChild(pizzaImageContainer);
-
-    //pizzaDescriptionContainer.classList.add("col-md-6");
     pizzaDescriptionContainer.style.width="65%";
 
     pizzaName = document.createElement("h4");

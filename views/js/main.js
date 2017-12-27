@@ -396,8 +396,8 @@ var pizzaElementGenerator = function(i) {
     pizzaContainer.classList.add("randomPizzaContainer");
     pizzaContainer.style.display = "inline-block";
     pizzaContainer.id = "pizza" + i; // gives each pizza element a unique id
-    //pizzaImageContainer.style.width="35%";
-    pizzaImageContainer.classList.add("col-md-6");
+    pizzaImageContainer.style.width="35%";
+    //pizzaImageContainer.classList.add("col-md-6");
 
 
 
@@ -406,8 +406,8 @@ var pizzaElementGenerator = function(i) {
     pizzaImageContainer.appendChild(pizzaImage);
     pizzaContainer.appendChild(pizzaImageContainer);
 
-    pizzaDescriptionContainer.classList.add("col-md-6");
-    //pizzaDescriptionContainer.style.width="65%";
+    //pizzaDescriptionContainer.classList.add("col-md-6");
+    pizzaDescriptionContainer.style.width="65%";
 
     pizzaName = document.createElement("h4");
     pizzaName.innerHTML = randomName();
@@ -537,10 +537,10 @@ function updatePositions() {
     frame++;
     window.performance.mark("mark_start_frame");
 
-    var items = document.getElementsByClassName('.mover');
-    for (var i = 0; i < items.length; i++) {
+    var items = document.getElementsByClassName('mover');
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    for (var i = 0, len = items.length; i < len; i++) {
         // document.body.scrollTop is no longer supported in Chrome.
-        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
         var phase = Math.sin((scrollTop / 1250) + (i % 5));
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }

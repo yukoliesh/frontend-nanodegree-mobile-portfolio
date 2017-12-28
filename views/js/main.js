@@ -398,7 +398,6 @@ var pizzaElementGenerator = function(i) {
     pizzaContainer.style.height="300px";
     pizzaImageContainer.style.width="35%";
 
-
     pizzaImage.src = "images/pizza-min.png";
     pizzaImage.classList.add("img-responsive");
     pizzaImageContainer.appendChild(pizzaImage);
@@ -501,7 +500,7 @@ window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
 var pizzasDiv = document.getElementById("randomPizzas");
-for (var i = 2; i < 10; i++) {
+for (var i = 2; i < 100; i++) {
     pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -557,7 +556,7 @@ window.addEventListener('scroll', updatePositions);
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
     //geting the browswer height and width
-    //var visibleHeight = window.innerHeight;
+    var visibleHeight = window.innerHeight;
     var visibleWidth = window.innerWidth;
     var s = 256;
 

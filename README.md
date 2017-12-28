@@ -23,12 +23,14 @@ backface-visibility: hidden
 
 
 ### The Result after the change
-* Time to generate pizzas on load: 10.849999999999682ms
-* Average scripting time to generate last 10 frames: 0.015500000000611181ms
-* Average scripting time to generate last 10 frames: 0.020999999993364327ms
-* Average scripting time to generate last 10 frames: 0.014500000000771252ms
-* Time to resize pizzas: 1.3349999999991269ms
-* Average scripting time to generate last 10 frames: 0.013999999989755452ms
+* Time to generate pizzas on load: 3.4150000000000773ms
+* Average scripting time to generate last 10 frames: 0.031000000000858563ms
+* Average scripting time to generate last 10 frames: 0.01899999999877764ms
+* Average scripting time to generate last 10 frames: 0.01900000000059663ms
+* Time to resize pizzas: 1.3400000000037835ms (Large)
+* Time to resize pizzas: 0.8100000000049477ms (Medium)
+* Time to resize pizzas: 0.7950000000128057ms (Small)
+* Average scripting time to generate last 10 frames: 0.020000000000436557ms
 
 ## How I ran this test
 * I ran the local server and created a public URL by ngrok
